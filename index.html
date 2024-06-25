@@ -129,7 +129,7 @@
         </div>
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">Abubaker</h1>
-          <h5 class="fg-theme mb-3">UI/UX & Web Developer</h5>
+          <h5 class="fg-theme mb-3">UI/UX designer & Web Developer</h5>
           <p class="text-muted">Web development projects vary widely, but most are tailored and customized to fit the
             unique needs of each client.</p>
 
@@ -139,7 +139,8 @@
             <li><b>Age:</b> 25</li>
             <li><b>Gender:</b> Male</li>
           </ul>
-          <button class="btn btn-theme-outline">Download CV</button>
+          <a href="assets/cv.pdf" target="_blank" class="btn btn-theme-outline">Download CV</a>
+
         </div>
 
       </div>
@@ -586,20 +587,22 @@
         <h4 class="animation a2">Feel free to reach out for any inquiries or collaborations.</h4>
       </div>
       <div class="form">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
           <div class="row g-3 p-3">
             <div class="col-12 animation a3 my-2 form-animate-right">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input type="text" name='Name' class="form-control" placeholder="Your Name" required>
             </div>
             <div class="col-12 animation a4 my-2 form-animate-right">
-              <input type="email" class="form-control" placeholder="Email Address">
+              <input type="email" name="Email" class="form-control" placeholder="Email Address" required>
             </div>
             <div class="col-12 animation a5 my-2 form-animate-right">
-              <input type="text" class="form-control" placeholder="Subject">
+              <input type="text" name="Subject" class="form-control" placeholder="Subject" required>
             </div>
             <div class="col-12 animation a6 my-2 form-animate-right">
-              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+              <textarea class="form-control" name="Message" rows="4" placeholder="Your Message" required></textarea>
             </div>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <input type="hidden" name="apikey" value="419c67fd-6eb4-42be-af86-7472d3df7413">
             <div class="col-12 animation a7 my-2 form-animate-right">
               <button type="submit" class="btn-form">SEND MESSAGE</button>
             </div>
